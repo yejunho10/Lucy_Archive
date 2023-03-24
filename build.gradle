@@ -2,15 +2,12 @@ plugins {
     id 'java'
 }
 
-group 'net.starly.boilerplate' // TODO: 수정
+group 'net.lucymc.archive'
 version '1.0'
 
 repositories {
     mavenCentral()
-    maven {
-        url = "http://starly.kr:8083/repository/maven-public/"
-        allowInsecureProtocol = true
-    }
+    mavenLocal()
 }
 
 dependencies {
@@ -20,10 +17,7 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:1.18.24"
 
     //BUKKIT DEPENDENCIES
-    compileOnly "org.spigotmc:spigot-api:R0.1:1.12.2"
-
-    // OTHER DEPENDENCIES
-    compileOnly "net.starly.core:ST-Core:1.6.11"
+    compileOnly "org.spigotmc:spigot:1.19.3-R0.1-SNAPSHOT"
 }
 
 tasks.withType(JavaCompile) {

@@ -1,14 +1,11 @@
-name: ST-BoilerPlate # TODO: 수정
-main: net.starly.boilerplate.BoilerPlateMain # TODO: 수정
-author: Starly Team
+name: LucyArchive
+main: net.lucymc.archive.LucyArchiveMain
+author: yejunho10
 website: http://starly.kr/discord
 
-description: BoilerPlate Plugin. # TODO: 수정
-
-softdepend:
-  - ST-Core
+description: LucyArchive Plugin.
 
 version: 1.0
-api-version: 1.13
+api-version: 1.19
 
 commands:
