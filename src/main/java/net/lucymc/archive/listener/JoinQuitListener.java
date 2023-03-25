@@ -26,7 +26,7 @@ public class JoinQuitListener implements Listener {
         /* WELCOME MESSAGE
          ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
         getServer().getScheduler().runTaskLater(LucyArchiveMain.getInstance(), () -> {
-            player.sendMessage("§6안녕하세요! LucyNetwork Archive에 오신 것을 환영합니다.\n§7이 서버는 LucyNetwork의 아카이브 서버입니다. (비공식)");
+            player.sendMessage("§6안녕하세요! LucyArchive에 오신 것을 환영합니다.\n§7이 서버는 LucyNetwork의 아카이브 서버입니다. (비공식)");
             player.sendMessage("§7⭐ 플라이가 적용 되었습니다!");
 
             TextComponent yejunDiscord = new TextComponent("호예준#1234"); yejunDiscord.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.com/users/1039809905537859615"));
