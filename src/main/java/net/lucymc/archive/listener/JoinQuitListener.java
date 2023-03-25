@@ -27,15 +27,15 @@ public class JoinQuitListener implements Listener {
          ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
         getServer().getScheduler().runTaskLater(LucyArchiveMain.getInstance(), () -> {
             player.sendMessage("§6안녕하세요! LucyNetwork Archive에 오신 것을 환영합니다.\n§7이 서버는 LucyNetwork의 아카이브 서버입니다. (비공식)");
+            player.sendMessage("§7⭐ 플라이가 적용 되었습니다!");
 
             TextComponent yejunDiscord = new TextComponent("호예준#1234"); yejunDiscord.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.com/users/1039809905537859615"));
             BaseComponent[] message = new ComponentBuilder()
-                    .append("☺ 문의 : ").color(ChatColor.GRAY)
+                    .append("⭐ 문의 : ").color(ChatColor.GRAY)
                     .append(yejunDiscord).color(ChatColor.YELLOW)
                     .create();
             player.spigot().sendMessage(message);
 
-            player.sendMessage("§7플라이가 적용 되었습니다!");
             player.sendMessage("§7⭐ 무료 플러그인 배포/외주 : §fhttps://starly.kr/discord");
             player.sendMessage("§r");
         }, 3L);
