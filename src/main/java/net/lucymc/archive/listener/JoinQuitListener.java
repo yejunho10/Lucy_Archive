@@ -21,7 +21,7 @@ public class JoinQuitListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        player.setFlying(true);
+        player.setAllowFlight(true);
 
         /* WELCOME MESSAGE
          ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
@@ -35,7 +35,9 @@ public class JoinQuitListener implements Listener {
                     .create();
             player.spigot().sendMessage(message);
 
+            player.sendMessage("§7플라이가 적용 되었습니다!");
             player.sendMessage("§7⭐ 무료 플러그인 배포/외주 : §fhttps://starly.kr/discord");
+            player.sendMessage("§r");
         }, 3L);
 
 
