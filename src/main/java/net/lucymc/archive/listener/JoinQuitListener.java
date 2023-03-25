@@ -3,7 +3,6 @@ package net.lucymc.archive.listener;
 import net.lucymc.archive.LucyArchiveMain;
 import net.lucymc.archive.util.MessageUtil;
 import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
@@ -21,6 +20,8 @@ public class JoinQuitListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
+
+        player.setFlying(true);
 
         /* WELCOME MESSAGE
          ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
