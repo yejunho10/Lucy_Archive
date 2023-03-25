@@ -13,6 +13,8 @@ public class EntityListener implements Listener {
 
     @EventHandler
     public void onFoodLevelChange(FoodLevelChangeEvent event) {
+        if (event.getFoodLevel() != 20) return;
+
         event.setCancelled(true);
     }
 }
