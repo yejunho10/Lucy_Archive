@@ -10,16 +10,14 @@ import org.bukkit.event.entity.FoodLevelChangeEvent;
 public class EntityListener implements Listener {
     @EventHandler
     public void onDamage(EntityDamageByEntityEvent event) {
-        if (!(event.getEntity() instanceof Player)) return;
-        if (!(event.getDamager() instanceof Player damager)) return;
-        if (damager.isOp()) return;
+        if (event.getDamager().isOp()) return;
 
         event.setCancelled(true);
     }
 
     @EventHandler
     public void onBlockDamage(EntityDamageByBlockEvent event) {
-        if (!(event.getEntity() instanceof Player player)) return;
+        if (!(event.getEntity() instanceof Player)) return;
 
         event.setCancelled(true);
     }
