@@ -7,6 +7,7 @@ import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -40,6 +41,10 @@ public class JoinQuitListener implements Listener {
             player.sendMessage("§r");
         }, 3L);
 
+        /* WELCOME TITLE
+         ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
+        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+        player.sendTitle("§6§6LucyArchive§7에 오신 것을 환영합니다!", "§b[§6/spawn§b] §7을 사용해보세요!", 2 * 20, 15 * 20, 2 * 20);
 
         /* JOIN MESSAGE
          ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
