@@ -19,7 +19,6 @@ public class LucyArchiveMain extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EntityListener(), instance);
         getServer().getPluginManager().registerEvents(new InventoryListener(), instance);
         getServer().getPluginManager().registerEvents(new JoinQuitListener(), instance);
-        getServer().getPluginManager().registerEvents(new PlayerInteractListener(), instance);
     }
 
     public static LucyArchiveMain getInstance() {
